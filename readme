@@ -1,0 +1,88 @@
+# 🔒 WP Security Check by WPMaster
+
+O **WP Security Check** é um plugin para WordPress que realiza uma varredura completa nas principais configurações de segurança do seu site, identificando vulnerabilidades, falhas e boas práticas que podem ser aplicadas para fortalecer a segurança da sua instalação WordPress.
+
+Desenvolvido por **Thomas Lage (WPMaster)**, este plugin é uma ferramenta essencial para quem deseja manter seu site WordPress seguro e otimizado contra ataques, sem complicações técnicas.
+
+---
+
+## 🧩 Funcionalidades
+
+O plugin realiza verificações automáticas em várias áreas críticas de segurança, incluindo:
+
+### ✅ Verificações básicas
+- Versão do WordPress oculta  
+- Leitura de diretórios desativada  
+- XML-RPC desabilitado  
+
+### ⚠️ Alertas e problemas críticos
+- **Modo Debug (WP_DEBUG) habilitado**  
+  - Exibe erros e warnings PHP no frontend, expondo caminhos e informações sensíveis.  
+  - Solução: desativar no `wp-config.php` com:
+    ```php
+    define('WP_DEBUG', false);
+    define('WP_DEBUG_LOG', true);
+    ```
+
+- **Login e Força Bruta**
+  - Recomendações para proteger o formulário de login contra tentativas de força bruta.
+
+- **HTTP Headers (Defesa de Borda)**
+  - Sugestões para adicionar cabeçalhos de segurança como `Content-Security-Policy`, `X-Frame-Options`, entre outros.
+
+- **Hardening do Sistema de Arquivos**
+  - Checagem de permissões e acessos a arquivos sensíveis (`wp-config.php`, `.htaccess`, `wp-admin`, etc).
+
+---
+
+## 🛡️ Benefícios
+
+- Detecção rápida de falhas críticas.  
+- Recomendações práticas e diretas para correção.  
+- Interface amigável e intuitiva dentro do painel WordPress.  
+- Ideal para agências, desenvolvedores e administradores de sites.  
+
+---
+
+## 📸 Exemplo de Relatório
+
+O relatório é exibido visualmente com ícones e cores para facilitar a análise:
+
+- 🟢 Configurações seguras  
+- 🟡 Alertas de atenção  
+- 🔴 Problemas críticos  
+
+*(Veja as imagens no diretório `/screenshots` do repositório.)*
+
+---
+
+## ⚙️ Instalação
+
+1. Faça o upload do plugin no painel do WordPress (`Plugins > Adicionar novo > Enviar plugin`).
+2. Ative o plugin.
+3. Acesse o menu **Segurança** para visualizar o relatório completo.
+
+---
+
+## 🧑‍💻 Créditos
+
+**Desenvolvido por:** [Thomas Lage](https://wpmaster.com.br)  
+**Organização:** WPMaster  
+
+---
+
+## 📄 Licença
+
+Distribuído sob a licença **GPLv2 ou posterior**.  
+Você pode modificar e redistribuir este software livremente, desde que mantenha os créditos do autor original.
+
+---
+
+## 💬 Contribuições
+
+Sinta-se à vontade para abrir *issues* e enviar *pull requests* com melhorias.  
+Toda contribuição é bem-vinda para fortalecer ainda mais a segurança da comunidade WordPress.
+
+---
+
+**⭐ Dê uma estrela no repositório se este plugin te ajudou!**
